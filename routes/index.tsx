@@ -3,6 +3,7 @@ import { h } from "preact";
 import { tw } from "@twind";
 import Counter from "../islands/Counter.tsx";
 import NumberInput from "../components/NumberInput.tsx";
+import RefundForm from "../islands/RefundForm.tsx";
 
 export default function Home() {
   return (
@@ -193,67 +194,7 @@ export default function Home() {
       >
         Diverse utgifter ifølge bilag:
       </h3>
-
-      <div style="display:flex">
-        <textarea
-          name="line-1"
-          type="text"
-          style="border-bottom:1px black solid; margin-right: 150px; flex-grow:1;"
-          rows={1}
-        ></textarea>
-        <span>
-          <strong>kr.</strong> <NumberInput name="line-1-amount" />
-        </span>
-      </div>
-      <div style="display:flex">
-        <textarea
-          name="line-1"
-          type="text"
-          style="border-bottom:1px black solid; margin-right: 150px; flex-grow:1;"
-          rows={1}
-          wrap="soft"
-        ></textarea>
-        <span>
-          <strong>kr.</strong> <NumberInput name="line-1-amount" />
-        </span>
-      </div>
-      <div style="display:flex">
-        <h3
-          style="
-        padding-top: 4pt;
-        padding-left: 5pt;
-        text-indent: 0pt;
-        text-align: left;
-        display: inline;
-        margin-top: 50px;
-        margin-right: 150px; flex-grow:1;
-      "
-        >
-          <label for="courseAmount">Refusjon turlederkurs: (-)</label>
-        </h3>
-        <span class="">
-          <strong>kr.</strong> <NumberInput name="courseAmount" />
-        </span>
-      </div>
-
-      <div style="display:flex">
-        <p
-          style="
-        padding-top: 4pt;
-        padding-left: 5pt;
-        text-indent: 0pt;
-        text-align: left;
-        flex-grow: 1;
-        margin-top: 50px;
-      "
-        >
-          SUM
-        </p>
-        <span>
-          <strong>kr.</strong>
-          <NumberInput name="sum" disabled />
-        </span>
-      </div>
+      <RefundForm />
 
       <div
         style="
