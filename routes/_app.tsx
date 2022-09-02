@@ -18,7 +18,7 @@ const css = `
     font-size: 15.5pt;
   }
   .p,
-  p {
+  p, label {
     color: black;
     font-family: "Times New Roman", serif;
     font-style: normal;

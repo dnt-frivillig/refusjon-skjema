@@ -1,9 +1,16 @@
 /** @jsx h */
 import { h } from "preact";
 
-export default function NumberInput({ name }: { name: string }) {
+export default function NumberInput({
+  name,
+  disabled,
+}: {
+  name: string;
+  disabled?: boolean;
+}) {
   return (
     <input
+      disabled={disabled}
       name={name}
       type="number"
       min="1"

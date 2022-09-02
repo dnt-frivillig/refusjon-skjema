@@ -40,36 +40,45 @@ export default function Home() {
       <p style="text-indent: 0pt; text-align: left">
         <br />
       </p>
-      <p
+      <div
         style="
+        display: flex;
+
         padding-top: 4pt;
         padding-left: 5pt;
         text-indent: 0pt;
         text-align: left;
+        width: 100%;
       "
       >
-        <label for="name">NAVN:</label>
-        <input
-          id="name"
-          name="name"
-          type="text"
-          style="border-bottom:1px black solid;"
-        />
-        <label for="tripNumber">Ledet tur nr:</label>
-        <input
-          name="tripNumber"
-          id="tripNumber"
-          type="text"
-          style="border-bottom:1px black solid;"
-        />
-        <label for="depatureDate">Avg. Dato:</label>
-        <input
-          name="depatureDate"
-          id="depatureDate"
-          type="text"
-          style="border-bottom:1px black solid;"
-        />
-      </p>
+        <div style="flex-grow: 1; display: flex">
+          <label for="name">NAVN:</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            style="border-bottom:1px black solid; flex-grow:1"
+          />
+        </div>
+        <div>
+          <label for="tripNumber">Ledet tur nr:</label>
+          <input
+            name="tripNumber"
+            id="tripNumber"
+            type="text"
+            style="border-bottom:1px black solid; width: 40pt"
+          />
+        </div>
+        <div>
+          <label for="depatureDate">Avg. Dato:</label>
+          <input
+            name="depatureDate"
+            id="depatureDate"
+            type="date"
+            style="border-bottom:1px black solid;"
+          />
+        </div>
+      </div>
       <p style="text-indent: 0pt; text-align: left">
         <br />
       </p>
@@ -79,6 +88,7 @@ export default function Home() {
         padding-left: 5pt;
         text-indent: 0pt;
         text-align: left;
+        display: flex;
       "
       >
         <label for="address">Adresse:</label>
@@ -87,7 +97,7 @@ export default function Home() {
           name="address"
           id="address"
           type="text"
-          style="border-bottom:1px black solid;"
+          style="border-bottom:1px black solid; flex-grow: 1"
         />
       </p>
       <p style="text-indent: 0pt; text-align: left">
@@ -99,6 +109,7 @@ export default function Home() {
         padding-left: 5pt;
         text-indent: 0pt;
         text-align: left;
+        display: flex;
       "
       >
         <label for="accountNumber">Konto nr.</label>
@@ -106,7 +117,7 @@ export default function Home() {
           name="accountNumber"
           id="accountNumber"
           type="text"
-          style="border-bottom:1px black solid;"
+          style="border-bottom:1px black solid; flex-grow:1"
         />
         <label for="purpose">Annet formål enn tur:</label>
 
@@ -114,7 +125,7 @@ export default function Home() {
           name="purpose"
           id="purpose"
           type="text"
-          style="border-bottom:1px black solid;"
+          style="border-bottom:1px black solid; flex-grow:1"
         />
       </p>
       <h4
@@ -123,6 +134,7 @@ export default function Home() {
         padding-left: 5pt;
         text-indent: 0pt;
         text-align: left;
+        display: flex;
       "
       >
         <label for="overseasAccountNumbers">
@@ -133,7 +145,7 @@ export default function Home() {
           name="overseasAccountNumbers"
           id="overseasAccountNumbers"
           type="text"
-          style="border-bottom:1px black solid;"
+          style="border-bottom:1px black solid; flex-grow:1"
         />
       </h4>
       <p style="text-indent: 0pt; text-align: left">
@@ -145,6 +157,7 @@ export default function Home() {
         padding-left: 5pt;
         text-indent: 0pt;
         text-align: left;
+        display: flex;
       "
       >
         <label for="email">Epost:</label>
@@ -152,7 +165,7 @@ export default function Home() {
           name="email"
           id="email"
           type="text"
-          style="border-bottom:1px black solid;"
+          style="border-bottom:1px black solid; flex-grow:1"
         />
         <span class="s3"> </span>
         <label for="dntContact">Kontaktperson i DNT:</label>
@@ -160,7 +173,7 @@ export default function Home() {
           name="dntContact"
           id="dntContact"
           type="text"
-          style="border-bottom:1px black solid;"
+          style="border-bottom:1px black solid; flex-grow:1"
         />
       </p>
       <h2
@@ -181,89 +194,117 @@ export default function Home() {
         style="
         padding-top: 4pt;
         padding-left: 5pt;
+        padding-bottom: 20pt;
         text-indent: 0pt;
         text-align: left;
       "
       >
         Diverse utgifter ifølge bilag:
       </h3>
-      <p style="text-indent: 0pt; text-align: left">
-        <br />
-      </p>
-      <p style="text-indent: 0pt; text-align: left" />
-      <input name="line-1" type="text" style="border-bottom:1px black solid;" />
-      <p style="padding-top: 4pt; text-indent: 0pt; text-align: right">
-        kr. <NumberInput name="line-1-amount" />
-      </p>
+
+      <div style="display:flex">
+        <textarea
+          name="line-1"
+          type="text"
+          style="border-bottom:1px black solid; margin-right: 150px; flex-grow:1;"
+          rows={1}
+        ></textarea>
+        <span>
+          <strong>kr.</strong> <NumberInput name="line-1-amount" />
+        </span>
+      </div>
+      <div style="display:flex">
+        <textarea
+          name="line-1"
+          type="text"
+          style="border-bottom:1px black solid; margin-right: 150px; flex-grow:1;"
+          rows={1}
+          wrap="soft"
+        ></textarea>
+        <span>
+          <strong>kr.</strong> <NumberInput name="line-1-amount" />
+        </span>
+      </div>
+      <div style="display:flex">
+        <h3
+          style="
+        padding-top: 4pt;
+        padding-left: 5pt;
+        text-indent: 0pt;
+        text-align: left;
+        display: inline;
+        margin-top: 50px;
+        margin-right: 150px; flex-grow:1;
+      "
+        >
+          <label for="courseAmount">Refusjon turlederkurs: (-)</label>
+        </h3>
+        <span class="">
+          <strong>kr.</strong> <NumberInput name="courseAmount" />
+        </span>
+      </div>
+
+      <div style="display:flex">
+        <p
+          style="
+        padding-top: 4pt;
+        padding-left: 5pt;
+        text-indent: 0pt;
+        text-align: left;
+        flex-grow: 1;
+        margin-top: 50px;
+      "
+        >
+          SUM
+        </p>
+        <span>
+          <strong>kr.</strong>
+          <NumberInput name="sum" disabled />
+        </span>
+      </div>
+
+      <div
+        style="
+        padding-top: 4pt;
+        padding-left: 5pt;
+        text-indent: 0pt;
+        text-align: left;
+        margin-top: 50px;
+        margin-right: 200px;
+        display: flex;
+
+      "
+      >
+        <div style="flex-grow: 1">
+          <label for="placeDate">Sted/dato:</label>
+          <input
+            name="placeDate"
+            id="placeDate"
+            type="date"
+            style="display: block;"
+          />
+        </div>
+        <div>
+          <label for="signature">Underskrift av turleder:</label>
+          <p style="text-indent: 0pt; text-align: left">
+            Canvas goes here
+            <br />
+          </p>
+        </div>
+      </div>
       <p style="text-indent: 0pt; text-align: left">
         <br />
       </p>
 
-      <p style="text-indent: 0pt; text-align: left">
-        <br />
-      </p>
-      <h3
-        style="
-        padding-top: 4pt;
-        padding-left: 5pt;
-        text-indent: 0pt;
-        text-align: left;
-      "
-      >
-        <label for="courseAmount">
-          Refusjon turlederkurs: (-)<span class="p"> kr. </span>
-        </label>
-        <NumberInput name="courseAmount" />
-      </h3>
-      <p style="text-indent: 0pt; text-align: left">
-        <br />
-      </p>
-      <p
-        style="
-        padding-top: 4pt;
-        padding-left: 5pt;
-        text-indent: 0pt;
-        text-align: left;
-      "
-      >
-        SUM kr. <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u>
-      </p>
-      <p style="text-indent: 0pt; text-align: left">
-        <br />
-      </p>
-      <p
-        style="
-        padding-top: 4pt;
-        padding-left: 5pt;
-        text-indent: 0pt;
-        text-align: left;
-      "
-      >
-        <label for="placeDate">Sted/dato:</label>
-        <label for="signature">Underskrift av turleder:</label>
-      </p>
-      <p style="text-indent: 0pt; text-align: left">
-        <input
-          name="placeDate"
-          id="placeDate"
-          type="text"
-          style="border-bottom:1px black solid;"
-        />
-        <br />
-      </p>
-      <p style="text-indent: 0pt; text-align: left">
-        Canvas goes here
-        <br />
-      </p>
       <p
         class="s4"
         style="padding-left: 5pt; text-indent: 0pt; text-align: left"
       >
-        <a href="http://www/" class="a" target="_blank">
-          DNT Oslo og Omegn, Storgata 3, pb. 7 Sentrum, 0101 Oslo. Org.nr: mva.
-          940698332 NO.{" "}
+        DNT Oslo og Omegn, Storgata 3, pb. 7 Sentrum, 0101 Oslo. Org.nr: mva.
+        940698332 NO.
+        <a href="https://www.dntoslo.no" class="a" target="_blank">
+          www.dntoslo.no
         </a>
-        www. dntoslo.no
       </p>
       <img
         src="/logo.svg"
