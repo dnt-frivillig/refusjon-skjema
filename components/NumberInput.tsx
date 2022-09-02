@@ -4,13 +4,19 @@ import { h } from "preact";
 export default function NumberInput({
   name,
   disabled,
+  value,
+  onChange,
 }: {
   name: string;
   disabled?: boolean;
+  value?: number;
+  onChange?: h.JSX.GenericEventHandler<HTMLInputElement>;
 }) {
   return (
     <input
       disabled={disabled}
+      onChange={onChange}
+      value={value}
       name={name}
       type="number"
       min="1"
