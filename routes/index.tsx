@@ -48,12 +48,27 @@ export default function Home() {
         text-align: left;
       "
       >
-        NAVN:
-        <input type="text" style="border-bottom:1px black solid;" />
-        Ledet tur nr:
-        <input type="text" style="border-bottom:1px black solid;" />
-        Avg. Dato:
-        <input type="text" style="border-bottom:1px black solid;" />
+        <label for="name">NAVN:</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          style="border-bottom:1px black solid;"
+        />
+        <label for="tripNumber">Ledet tur nr:</label>
+        <input
+          name="tripNumber"
+          id="tripNumber"
+          type="text"
+          style="border-bottom:1px black solid;"
+        />
+        <label for="depatureDate">Avg. Dato:</label>
+        <input
+          name="depatureDate"
+          id="depatureDate"
+          type="text"
+          style="border-bottom:1px black solid;"
+        />
       </p>
       <p style="text-indent: 0pt; text-align: left">
         <br />
@@ -66,8 +81,14 @@ export default function Home() {
         text-align: left;
       "
       >
-        Adresse:
-        <input type="text" style="border-bottom:1px black solid;" />
+        <label for="address">Adresse:</label>
+
+        <input
+          name="address"
+          id="address"
+          type="text"
+          style="border-bottom:1px black solid;"
+        />
       </p>
       <p style="text-indent: 0pt; text-align: left">
         <br />
@@ -80,10 +101,21 @@ export default function Home() {
         text-align: left;
       "
       >
-        Konto nr.
-        <input type="text" style="border-bottom:1px black solid;" />
-        Annet formål enn tur:
-        <input type="text" style="border-bottom:1px black solid;" />
+        <label for="accountNumber">Konto nr.</label>
+        <input
+          name="accountNumber"
+          id="accountNumber"
+          type="text"
+          style="border-bottom:1px black solid;"
+        />
+        <label for="purpose">Annet formål enn tur:</label>
+
+        <input
+          name="purpose"
+          id="purpose"
+          type="text"
+          style="border-bottom:1px black solid;"
+        />
       </p>
       <h4
         style="
@@ -93,8 +125,16 @@ export default function Home() {
         text-align: left;
       "
       >
-        Iban og swift for utlands konto:
-        <input type="text" style="border-bottom:1px black solid;" />
+        <label for="overseasAccountNumbers">
+          Iban og swift for utlands konto:
+        </label>
+
+        <input
+          name="overseasAccountNumbers"
+          id="overseasAccountNumbers"
+          type="text"
+          style="border-bottom:1px black solid;"
+        />
       </h4>
       <p style="text-indent: 0pt; text-align: left">
         <br />
@@ -107,9 +147,21 @@ export default function Home() {
         text-align: left;
       "
       >
-        Epost: <input type="text" style="border-bottom:1px black solid;" />
-        <span class="s3"> </span>Kontaktperson i DNT:
-        <input type="text" style="border-bottom:1px black solid;" />
+        <label for="email">Epost:</label>
+        <input
+          name="email"
+          id="email"
+          type="text"
+          style="border-bottom:1px black solid;"
+        />
+        <span class="s3"> </span>
+        <label for="dntContact">Kontaktperson i DNT:</label>
+        <input
+          name="dntContact"
+          id="dntContact"
+          type="text"
+          style="border-bottom:1px black solid;"
+        />
       </p>
       <h2
         style="
@@ -139,9 +191,9 @@ export default function Home() {
         <br />
       </p>
       <p style="text-indent: 0pt; text-align: left" />
-      <input type="text" style="border-bottom:1px black solid;" />
+      <input name="line-1" type="text" style="border-bottom:1px black solid;" />
       <p style="padding-top: 4pt; text-indent: 0pt; text-align: right">
-        kr. <NumberInput />
+        kr. <NumberInput name="line-1-amount" />
       </p>
       <p style="text-indent: 0pt; text-align: left">
         <br />
@@ -158,8 +210,10 @@ export default function Home() {
         text-align: left;
       "
       >
-        Refusjon turlederkurs: (-)<span class="p"> kr. </span>
-        <NumberInput />
+        <label for="courseAmount">
+          Refusjon turlederkurs: (-)<span class="p"> kr. </span>
+        </label>
+        <NumberInput name="courseAmount" />
       </h3>
       <p style="text-indent: 0pt; text-align: left">
         <br />
@@ -185,10 +239,16 @@ export default function Home() {
         text-align: left;
       "
       >
-        Sted/dato: Underskrift av turleder:
+        <label for="placeDate">Sted/dato:</label>
+        <label for="signature">Underskrift av turleder:</label>
       </p>
       <p style="text-indent: 0pt; text-align: left">
-        <input type="text" style="border-bottom:1px black solid;" />
+        <input
+          name="placeDate"
+          id="placeDate"
+          type="text"
+          style="border-bottom:1px black solid;"
+        />
         <br />
       </p>
       <p style="text-indent: 0pt; text-align: left">
