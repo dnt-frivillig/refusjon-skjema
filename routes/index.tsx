@@ -2,6 +2,7 @@
 import { h } from "preact";
 import { tw } from "@twind";
 import Counter from "../islands/Counter.tsx";
+import NumberInput from "../components/NumberInput.tsx";
 
 export default function Home() {
   return (
@@ -140,13 +141,7 @@ export default function Home() {
       <p style="text-indent: 0pt; text-align: left" />
       <input type="text" style="border-bottom:1px black solid;" />
       <p style="padding-top: 4pt; text-indent: 0pt; text-align: right">
-        kr.{" "}
-        <input
-          type="number"
-          step="1"
-          min="1"
-          style="border-bottom:1px black solid;"
-        />
+        kr. <NumberInput />
       </p>
       <p style="text-indent: 0pt; text-align: left">
         <br />
@@ -164,12 +159,7 @@ export default function Home() {
       "
       >
         Refusjon turlederkurs: (-)<span class="p"> kr. </span>
-        <input
-          type="number"
-          min="1"
-          step="1"
-          style="border-bottom:1px black solid;"
-        />
+        <NumberInput />
       </h3>
       <p style="text-indent: 0pt; text-align: left">
         <br />
