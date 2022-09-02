@@ -14,6 +14,17 @@ export default function Home() {
           <table border="0" cellspacing="0" cellpadding="0">
             <tr>
               <td>
+                <h1
+                  style="
+        padding-top: 20pt;
+        padding-left: 5pt;
+        padding-right: 10pt;
+      "
+                >
+                  REFUSJON UTLEGG: Turledere/Tillitsvalgte
+                </h1>
+              </td>
+              <td>
                 <img
                   width="228"
                   height="55"
@@ -24,16 +35,7 @@ export default function Home() {
           </table>
         </span>
       </p>
-      <h1
-        style="
-        padding-top: 4pt;
-        padding-left: 5pt;
-        text-indent: 0pt;
-        text-align: left;
-      "
-      >
-        REFUSJON UTLEGG: Turledere/Tillitsvalgte
-      </h1>
+
       <p style="text-indent: 0pt; text-align: left">
         <br />
       </p>
@@ -46,12 +48,11 @@ export default function Home() {
       "
       >
         NAVN:
-        <u>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-        </u>
+        <input type="text" style="border-bottom:1px black solid;" />
         Ledet tur nr:
-        <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u>Avg. Dato:
-        <u>&nbsp;&nbsp;&nbsp;&nbsp; </u>
+        <input type="text" style="border-bottom:1px black solid;" />
+        Avg. Dato:
+        <input type="text" style="border-bottom:1px black solid;" />
       </p>
       <p style="text-indent: 0pt; text-align: left">
         <br />
@@ -65,9 +66,7 @@ export default function Home() {
       "
       >
         Adresse:
-        <u>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </u>
+        <input type="text" style="border-bottom:1px black solid;" />
       </p>
       <p style="text-indent: 0pt; text-align: left">
         <br />
@@ -81,13 +80,9 @@ export default function Home() {
       "
       >
         Konto nr.
-        <u>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-        </u>
+        <input type="text" style="border-bottom:1px black solid;" />
         Annet formål enn tur:
-        <u>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </u>
+        <input type="text" style="border-bottom:1px black solid;" />
       </p>
       <h4
         style="
@@ -97,11 +92,8 @@ export default function Home() {
         text-align: left;
       "
       >
-        Iban og swift for utlands konto
-        <u>
-          :
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </u>
+        Iban og swift for utlands konto:
+        <input type="text" style="border-bottom:1px black solid;" />
       </h4>
       <p style="text-indent: 0pt; text-align: left">
         <br />
@@ -114,11 +106,9 @@ export default function Home() {
         text-align: left;
       "
       >
-        Epost: <u>&nbsp; </u>
+        Epost: <input type="text" style="border-bottom:1px black solid;" />
         <span class="s3"> </span>Kontaktperson i DNT:
-        <u>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </u>
+        <input type="text" style="border-bottom:1px black solid;" />
       </p>
       <h2
         style="
@@ -148,72 +138,20 @@ export default function Home() {
         <br />
       </p>
       <p style="text-indent: 0pt; text-align: left" />
+      <input type="text" style="border-bottom:1px black solid;" />
       <p style="padding-top: 4pt; text-indent: 0pt; text-align: right">
-        kr. <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u>
+        kr.{" "}
+        <input
+          type="number"
+          step="1"
+          min="1"
+          style="border-bottom:1px black solid;"
+        />
       </p>
       <p style="text-indent: 0pt; text-align: left">
         <br />
       </p>
-      <p style="text-indent: 0pt; text-align: left" />
-      <p style="padding-top: 4pt; text-indent: 0pt; text-align: right">
-        kr. <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u>
-      </p>
-      <p style="text-indent: 0pt; text-align: left">
-        <br />
-      </p>
-      <p style="text-indent: 0pt; text-align: left" />
-      <p style="padding-top: 4pt; text-indent: 0pt; text-align: right">
-        kr. <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u>
-      </p>
-      <p style="text-indent: 0pt; text-align: left">
-        <br />
-      </p>
-      <p style="text-indent: 0pt; text-align: left" />
-      <p style="padding-top: 4pt; text-indent: 0pt; text-align: right">
-        kr. <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u>
-      </p>
-      <p style="text-indent: 0pt; text-align: left">
-        <br />
-      </p>
-      <p style="text-indent: 0pt; text-align: left" />
-      <p style="padding-top: 4pt; text-indent: 0pt; text-align: right">
-        kr. <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u>
-      </p>
-      <p style="text-indent: 0pt; text-align: left">
-        <br />
-      </p>
-      <p style="text-indent: 0pt; text-align: left" />
-      <p style="padding-top: 4pt; text-indent: 0pt; text-align: right">
-        kr. <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u>
-      </p>
-      <p style="text-indent: 0pt; text-align: left">
-        <br />
-      </p>
-      <p style="text-indent: 0pt; text-align: left" />
-      <p style="padding-top: 4pt; text-indent: 0pt; text-align: right">
-        kr. <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u>
-      </p>
-      <p style="text-indent: 0pt; text-align: left">
-        <br />
-      </p>
-      <p style="text-indent: 0pt; text-align: left" />
-      <p style="padding-top: 4pt; text-indent: 0pt; text-align: right">
-        kr. <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u>
-      </p>
-      <p style="text-indent: 0pt; text-align: left">
-        <br />
-      </p>
-      <p style="text-indent: 0pt; text-align: left" />
-      <p style="padding-top: 4pt; text-indent: 0pt; text-align: right">
-        kr. <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u>
-      </p>
-      <p style="text-indent: 0pt; text-align: left">
-        <br />
-      </p>
-      <p style="text-indent: 0pt; text-align: left" />
-      <p style="padding-top: 4pt; text-indent: 0pt; text-align: right">
-        kr. <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u>
-      </p>
+
       <p style="text-indent: 0pt; text-align: left">
         <br />
       </p>
@@ -226,7 +164,12 @@ export default function Home() {
       "
       >
         Refusjon turlederkurs: (-)<span class="p"> kr. </span>
-        <span class="s1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+        <input
+          type="number"
+          min="1"
+          step="1"
+          style="border-bottom:1px black solid;"
+        />
       </h3>
       <p style="text-indent: 0pt; text-align: left">
         <br />
@@ -255,9 +198,11 @@ export default function Home() {
         Sted/dato: Underskrift av turleder:
       </p>
       <p style="text-indent: 0pt; text-align: left">
+        <input type="text" style="border-bottom:1px black solid;" />
         <br />
       </p>
       <p style="text-indent: 0pt; text-align: left">
+        Canvas goes here
         <br />
       </p>
       <p
