@@ -3,12 +3,23 @@ import { h } from "preact";
 import { useState } from "preact/hooks";
 import NumberInput from "../components/NumberInput.tsx";
 
+type Line = { description: string; value?: number };
+const EMPTY_LINE = Object.freeze({ description: "", value: undefined });
+const INITIAL_DATA = [{ ...EMPTY_LINE }, { ...EMPTY_LINE }, { ...EMPTY_LINE }];
 export default function RefundForm() {
-  const [lines, setLines] = useState([
-    { description: "", value: undefined },
-    { description: "", value: undefined },
-    { description: "", value: undefined },
-  ]);
+  const [lines, setLines] = useState(INITIAL_DATA);
+
+  function updateLines(lines: Line[]) {
+    const lastIndex = lines.findLastIndex(({ description, value }) => {
+      return description.trim().length > 0 || value != null;
+    });
+    if (lastIndex >= lines.length - 1) {
+      lines.push({ description: "", value: undefined });
+    }
+
+    setLines([...lines]);
+  }
+  console.log();
   const courseLine = lines[0];
   const lineElements = lines.slice(1).map((line, index) => {
     const { description, value } = line;
@@ -22,7 +33,7 @@ export default function RefundForm() {
           value={description}
           onChange={(e) => {
             line.description = e.target.value;
-            setLines(lines);
+            updateLines(lines);
           }}
         ></textarea>
         <span>
@@ -32,7 +43,7 @@ export default function RefundForm() {
             value={value}
             onChange={(e) => {
               line.value = Number(e.target?.value);
-              setLines([...lines]);
+              updateLines([...lines]);
             }}
           />
         </span>
@@ -68,7 +79,7 @@ export default function RefundForm() {
             value={courseLine?.value}
             onChange={(e) => {
               courseLine.value = Number(e.target?.value);
-              setLines([...lines]);
+              updateLines([...lines]);
             }}
           />
         </span>
