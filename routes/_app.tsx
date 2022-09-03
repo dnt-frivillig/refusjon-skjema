@@ -87,8 +87,15 @@ const css = `
     input[type=file] {
       display:none;
     }
+    input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+      }
+      input {
+          -moz-appearance: textfield;
+      }
   }
-
 `;
 export default function App({ Component }: AppProps) {
   return (
