@@ -3,6 +3,7 @@ import { h } from "preact";
 import { tw } from "@twind";
 import RefundForm from "../islands/RefundForm.tsx";
 import SignatureCanvas from "../islands/SignatureCanvas.tsx";
+import FileList from "../islands/FileList.tsx";
 import Logo from "../components/Logo.tsx";
 
 export default function Home() {
@@ -219,7 +220,7 @@ export default function Home() {
 
       <p
         class="s4"
-        style="padding-left: 5pt; text-indent: 0pt; text-align: left"
+        style="padding-left: 5pt; text-indent: 0pt; text-align: left; break-after: page;"
       >
         DNT Oslo og Omegn, Storgata 3, pb. 7 Sentrum, 0101 Oslo. Org.nr: mva.
         940698332 NO.
@@ -227,6 +228,7 @@ export default function Home() {
           www.dntoslo.no
         </a>
       </p>
+      <FileList />
     </div>
   );
 }

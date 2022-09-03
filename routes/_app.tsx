@@ -83,6 +83,12 @@ const css = `
     text-decoration: none;
     font-size: 8.5pt;
   }
+  @media print {
+    input[type=file] {
+      display:none;
+    }
+  }
+
 `;
 export default function App({ Component }: AppProps) {
   return (
