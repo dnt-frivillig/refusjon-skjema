@@ -202,12 +202,11 @@ export default function Home() {
         text-indent: 0pt;
         text-align: left;
         margin-top: 50px;
-        margin-right: 200px;
         display: flex;
 
       "
       >
-        <div style="flex-grow: 1">
+        <div style="flex-grow: 1; ">
           <label for="placeDate">Sted/dato:</label>
           <input
             name="placeDate"
@@ -216,15 +215,19 @@ export default function Home() {
             style="display: block;"
           />
         </div>
-        <div>
-          <label for="signature">Underskrift av turleder:</label>
-          <p style="text-indent: 0pt; text-align: left">
+        <div style="flex-grow: 1;">
+          <p>Underskrift av turleder:</p>
+          <div style="text-indent: 0pt; text-align: left; border: solid black 1px; padding-left: 200px">
             <SignatureCanvas
               penColor="black"
-              canvasProps={{ width: 500, height: 200, className: "sigCanvas" }}
+              canvasProps={{
+                width: "100%",
+                height: 100,
+                className: "sigCanvas",
+              }}
             />
             <br />
-          </p>
+          </div>
         </div>
       </div>
       <p style="text-indent: 0pt; text-align: left">
