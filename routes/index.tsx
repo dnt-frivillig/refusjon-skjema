@@ -1,9 +1,8 @@
 /** @jsx h */
 import { h } from "preact";
 import { tw } from "@twind";
-import Counter from "../islands/Counter.tsx";
-import NumberInput from "../components/NumberInput.tsx";
 import RefundForm from "../islands/RefundForm.tsx";
+import SignatureCanvas from "../islands/SignatureCanvas.tsx";
 
 export default function Home() {
   return (
@@ -220,7 +219,10 @@ export default function Home() {
         <div>
           <label for="signature">Underskrift av turleder:</label>
           <p style="text-indent: 0pt; text-align: left">
-            Canvas goes here
+            <SignatureCanvas
+              penColor="black"
+              canvasProps={{ width: 500, height: 200, className: "sigCanvas" }}
+            />
             <br />
           </p>
         </div>
