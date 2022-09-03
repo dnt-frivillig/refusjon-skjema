@@ -19,7 +19,6 @@ export default function RefundForm() {
 
     setLines([...lines]);
   }
-  console.log();
   const courseLine = lines[0];
   const lineElements = lines.slice(1).map((line, index) => {
     const { description, value } = line;
@@ -54,7 +53,6 @@ export default function RefundForm() {
     .filter(({ value }) => !!value)
     .map(({ value }) => value)
     .reduce((acc, value) => acc + value, 0);
-  console.log(sum);
   return (
     <div>
       {lineElements}

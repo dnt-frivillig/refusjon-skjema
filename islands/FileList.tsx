@@ -4,7 +4,6 @@ import { useState } from "preact/hooks";
 
 export default function FileList() {
   const [files, setFiles] = useState<File[]>([]);
-  console.log(files);
   const renderedFiles = files.map((file) => {
     return (
       <li
@@ -15,7 +14,6 @@ export default function FileList() {
       </li>
     );
   });
-  console.log(renderedFiles);
   return (
     <div>
       <h2>Kvitteringer</h2>
