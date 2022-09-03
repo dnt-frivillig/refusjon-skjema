@@ -215,19 +215,21 @@ export default function Home() {
             style="display: block;"
           />
         </div>
-        <div style="flex-grow: 1;">
+        <div style="flex-grow: 1; padding-left:100px;">
           <p>Underskrift av turleder:</p>
-          <div style="text-indent: 0pt; text-align: left; border: solid black 1px; padding-left: 200px">
-            <SignatureCanvas
-              penColor="black"
-              canvasProps={{
-                width: "100%",
-                height: 100,
-                className: "sigCanvas",
-              }}
-            />
-            <br />
-          </div>
+          <SignatureCanvas
+            penColor="black"
+            canvasProps={{
+              style: `width:100%; height:100px;background: repeating-linear-gradient(
+                45deg,
+                #eeeeee,
+                #eeeeee 10px,
+                #ffffff 10px,
+                #ffffff 20px
+              );`,
+              className: "sigCanvas",
+            }}
+          />
         </div>
       </div>
       <p style="text-indent: 0pt; text-align: left">
