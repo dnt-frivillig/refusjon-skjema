@@ -2,6 +2,7 @@
 import { h } from "preact";
 import { asset } from "$fresh/runtime.ts";
 import { tw } from "../utils/twind.ts";
+import DenoEditor from "../islands/DenoEditor.tsx";
 
 const style = `
 /* Font Definitions */
@@ -54,6 +55,8 @@ export default function VolunteerTrip() {
   return (
     <div class={tw`p-0 mx-auto max-w-screen-md`}>
       <style>{style}</style>
+      <DenoEditor />
+
       <div>
         <div className="WordSection1">
           <p className="MsoNormal">
