@@ -9,5 +9,6 @@
     "twind/": "https://esm.sh/twind@0.16.17/",
     "signature_pad": "https://esm.sh/v92/signature_pad@4.0.7",
     "trim-canvas": "https://esm.sh/v92/trim-canvas@0.1.2"
-  }
+  },
+  "scopes": {}
 }
