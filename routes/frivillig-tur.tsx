@@ -1,6 +1,7 @@
 /** @jsx h */
 import { h } from "preact";
 import { asset } from "$fresh/runtime.ts";
+import { tw } from "../utils/twind.ts";
 
 const style = `
 /* Font Definitions */
@@ -51,7 +52,7 @@ div.WordSection1
 
 export default function VolunteerTrip() {
   return (
-    <div>
+    <div class={tw`p-0 mx-auto max-w-screen-md`}>
       <style>{style}</style>
       <div>
         <div className="WordSection1">
