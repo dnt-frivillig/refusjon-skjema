@@ -1,5 +1,4 @@
-/** @jsx h */
-import { h, Component } from "preact";
+import { Component } from "preact";
 import SignaturePad from "signature_pad";
 import trimCanvas from "trim-canvas";
 

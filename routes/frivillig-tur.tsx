@@ -1,5 +1,3 @@
-/** @jsx h */
-import { h } from "preact";
 import { asset } from "$fresh/runtime.ts";
 import { tw } from "../utils/twind.ts";
 import DenoEditor from "../islands/DenoEditor.tsx";
@@ -53,7 +51,7 @@ div.WordSection1
 
 export default function VolunteerTrip() {
   return (
-    <div class={tw`p-0 mx-auto max-w-screen-md`}>
+    <div class="p-0 mx-auto max-w-screen-md">
       <style>{style}</style>
       <DenoEditor />
 

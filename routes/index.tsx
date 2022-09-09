@@ -1,6 +1,3 @@
-/** @jsx h */
-import { h } from "preact";
-import { tw } from "@twind";
 import RefundForm from "../islands/RefundForm.tsx";
 import SignatureCanvas from "../islands/SignatureCanvas.tsx";
 import FileList from "../islands/FileList.tsx";
@@ -8,7 +5,7 @@ import Logo from "../components/Logo.tsx";
 
 export default function Home() {
   return (
-    <div class={tw`p-0 mx-auto max-w-screen-md`}>
+    <div class="p-0 mx-auto max-w-screen-md">
       <div style="display: flex; margin-bottom:10px;">
         <h1
           style="
