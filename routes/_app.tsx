@@ -105,7 +105,6 @@ export default function App({ Component }: AppProps) {
         <title>Utlegg Turledere</title>
         <meta name="author" content="Max Brosnahan" />
         <style type="text/css">{css}</style>
-        <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
       </Head>
       <body class="bodyClass">
         <Component />
