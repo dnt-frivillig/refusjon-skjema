@@ -1,15 +1,32 @@
 {
   "imports": {
-    "$fresh/": "https://deno.land/x/fresh@1.1.0/",
-    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@5.2.3/",
-    "preact": "https://esm.sh/preact@10.10.6",
-    "preact/": "https://esm.sh/preact@10.10.6/",
+    "$fresh/": "https://deno.land/x/fresh@1.1.1/",
+    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.0.1",
+    "@preact/signals": "https://esm.sh/*@preact/signals@1.0.3",
+    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@5.2.4",
+    "preact": "https://esm.sh/preact@10.11.0",
+    "preact/": "https://esm.sh/preact@10.11.0/",
     "twind": "https://esm.sh/twind@0.16.17",
     "twind/": "https://esm.sh/twind@0.16.17/",
     "signature_pad": "https://esm.sh/v92/signature_pad@4.0.7",
     "trim-canvas": "https://esm.sh/v92/trim-canvas@0.1.2",
-    "@preact/signals": "https://esm.sh/*@preact/signals@1.0.3",
-    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.0.1"
+    "tesseract.js": "https://esm.sh/v96/*tesseract.js@3.0.3"
   },
-  "scopes": {}
+  "scopes": {
+    "tesseract.js": {
+      "babel-eslint": "https://esm.sh/v96/babel-eslint@10.1.0",
+      "bmp-js": "https://esm.sh/v96/bmp-js@0.1.0",
+      "file-type": "https://esm.sh/v96/file-type@12.4.2",
+      "idb-keyval": "https://esm.sh/v96/idb-keyval@3.2.0",
+      "is-electron": "https://esm.sh/v96/is-electron@2.2.1",
+      "is-url": "https://esm.sh/v96/is-url@1.2.4",
+      "node-fetch": "https://esm.sh/v96/node-fetch@2.6.7",
+      "opencollective-postinstall": "https://esm.sh/v96/opencollective-postinstall@2.0.3",
+      "regenerator-runtime": "https://esm.sh/v96/regenerator-runtime@0.13.9",
+      "resolve-url": "https://esm.sh/v96/resolve-url@0.2.1",
+      "tesseract.js-core": "https://esm.sh/v96/tesseract.js-core@3.0.2",
+      "wasm-feature-detect": "https://esm.sh/v96/wasm-feature-detect@1.3.0",
+      "zlibjs": "https://esm.sh/v96/zlibjs@0.3.1"
+    }
+  }
 }
