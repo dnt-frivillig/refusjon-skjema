@@ -103,6 +103,7 @@ export default function App({ Component }: AppProps) {
         <title>Utlegg Turledere</title>
         <meta name="author" content="Max Brosnahan" />
         <style type="text/css">{css}</style>
+        <script src="https://unpkg.com/tesseract.js@v3.0.3/dist/tesseract.min.js"></script>
       </Head>
       <body class="bodyClass">
         <Component />
