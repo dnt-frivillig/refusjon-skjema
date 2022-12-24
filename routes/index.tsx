@@ -3,9 +3,17 @@ import SignatureCanvas from "../islands/SignatureCanvas.tsx";
 import FileList from "../islands/FileList.tsx";
 import Logo from "../components/Logo.tsx";
 
+const rules = `
+@media print {
+  @page {
+    size: A4;
+  }
+}
+`;
 export default function Home() {
   return (
     <div class="p-0 mx-auto max-w-screen-md">
+      <style>{rules}</style>
       <div style="display: flex; margin-bottom:10px;">
         <h1
           style="

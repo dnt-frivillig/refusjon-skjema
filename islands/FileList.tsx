@@ -58,11 +58,12 @@ function checkText(file: File) {
 
 export default function FileList() {
   const [files, setFiles] = useState<File[]>([]);
+
   const renderedFiles = files.map((file) => {
     return (
       <li
-        style="padding: 4px;break-after: auto;
-      "
+        style="padding: 4px;page-break-inside: avoid;"
+        className="min-h-screen max-h-screen"
       >
         <img src={URL.createObjectURL(file)} alt="" />
       </li>
@@ -82,7 +83,7 @@ export default function FileList() {
           setFiles([...files, ...(Array.from(e.target.files) as File[])]);
         }}
       />
-      <ul>{renderedFiles}</ul>
+      <ul className="grid grid-cols-2 gap-4">{renderedFiles}</ul>
     </div>
   );
 }
