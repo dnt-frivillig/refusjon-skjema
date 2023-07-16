@@ -1,5 +1,5 @@
 import { Nav } from "../../components/Nav.tsx";
-import ExpenseNewForm from "../../islands/ExpenseNewForm.tsx";
+import ExpenseList from "../../islands/ExpenseList.tsx";
 
 export default function ExpenseGroupsNew() {
   return (
@@ -7,7 +7,7 @@ export default function ExpenseGroupsNew() {
       <div class="flex flex-col h-screen justify-center">
         <div class="bg-red-500">header</div>
         <div class="flex-grow">
-          <ExpenseNewForm />
+          <ExpenseList />
         </div>
         <Nav />
       </div>

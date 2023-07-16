@@ -19,7 +19,9 @@
     "twind": "https://esm.sh/twind@0.16.19",
     "twind/": "https://esm.sh/twind@0.16.19/",
     "signature_pad": "https://esm.sh/v92/signature_pad@4.0.7",
-    "trim-canvas": "https://esm.sh/v92/trim-canvas@0.1.2"
+    "trim-canvas": "https://esm.sh/v92/trim-canvas@0.1.2",
+    "zod": "https://deno.land/x/zod@v3.21.4/mod.ts",
+    "nanoid": "https://deno.land/x/nanoid@v3.0.0/mod.ts"
   },
   "scopes": {}
 }
